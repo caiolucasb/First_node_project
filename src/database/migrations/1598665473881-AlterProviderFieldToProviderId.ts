@@ -11,7 +11,7 @@ export default class AlterProviderFieldToProviderId1598665473881 implements Migr
         }),
         );
 
-        await queryRunner.createForeignKeys('appointments', new TableForeignKey({
+        await queryRunner.createForeignKey('appointments', new TableForeignKey({
         name: 'AppointmentProvider',
         columnNames: ['provider_id'],
         referencedColumnNames: ['id'],
